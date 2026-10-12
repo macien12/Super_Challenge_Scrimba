@@ -4,7 +4,7 @@ import { propertyForSaleArr } from './properties/propertyForSaleArr.js'
 
 function getPropertyHtml(propertyARR = [placeholderPropertyObj]) {
 
-    const propertyArr = propertyARR.map(function(property){
+    const propertyArr = propertyARR.map ((property) => {
         
     const {propertyLocation, priceGBP, roomsM2, comment, image} = property
 
