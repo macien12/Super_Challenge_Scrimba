@@ -1,3 +1,10 @@
+import { placeholderPropertyObj } from './properties/placeholderPropertyObj.js'
+
+import { propertyForSaleArr } from './properties/propertyForSaleArr.js'
+
+console.log(placeholderPropertyObj)
+
+
 function getPropertyHtml() {
 /*
 SUPER CHALLENGE 💪
