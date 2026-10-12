@@ -8,9 +8,8 @@ function getPropertyHtml(propertyARR = [placeholderPropertyObj]) {
         
     const {propertyLocation, priceGBP, roomsM2, comment, image} = property
 
-    const propertySize = roomsM2.reduce(function(total, currentElement) {
-    return total + currentElement
-    }, 0) 
+    const propertySize = roomsM2.reduce((total, currentElement) =>
+     total + currentElement, 0) 
 
     return `<section class="card">
     <img src="/images/${image}">
