@@ -2,13 +2,7 @@ import { placeholderPropertyObj } from './properties/placeholderPropertyObj.js'
 
 import { propertyForSaleArr } from './properties/propertyForSaleArr.js'
 
-const {propertyLocation, priceGBp, roomsM2, comment, image} = propertyForSaleArr
-
-
-
-
-
-function getPropertyHtml(propertyARR, DefaultProperty = placeholderPropertyObj) {
+function getPropertyHtml(propertyARR = [placeholderPropertyObj]) {
 
     const propertyArr = propertyARR.map(function(property){
         

@@ -1,19 +1,34 @@
-# Getting Started
-Install the dependencies and run the project
+# Houses for Sale
+
+A Scrimba JavaScript challenge that renders property cards with an image, location, price in GBP, description, and total floor area.
+
+## Example usage
+
+In `index.js`, pass the property array to `getPropertyHtml` to display all listings:
+
+```js
+document.getElementById('container').innerHTML = getPropertyHtml(propertyForSaleArr)
 ```
-npm install
-npm start
+
+For example, the Kensington listing uses this data:
+
+```js
+{
+    propertyLocation: 'Kensington, London',
+    priceGBP: 890000,
+    roomsM2: [14, 18, 14, 10, 6],
+    comment: 'Highly desirable location in stunning scenery!',
+    image: 'cottage.jpg'
+}
 ```
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+Its card displays Kensington, London, a price of `890000`, and a total area of **62 m²**, calculated by adding the room sizes.
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Fullstack Developer Path aims to teach you everything you need to become a Junior Developer, or you could go further with one of our advanced courses 🚀
+Call the function without an argument to display the placeholder property:
 
-- [Our courses](https://scrimba.com/courses)
-- [The Frontend Career Path](https://scrimba.com/fullstack-path-c0fullstack)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+```js
+document.getElementById('container').innerHTML = getPropertyHtml()
+```
 
-Happy Coding!
+The challenge practices import/export, `.map()`, `.join()`, object destructuring, `.reduce()`, and default parameters.
+
